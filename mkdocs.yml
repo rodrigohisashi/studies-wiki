@@ -1,0 +1,31 @@
+site_name: My studies
+site_url: https://yourgithubusername.github.io/my-project/
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Books:
+      - The Pragmatic Programmer: pragmatic_programmer.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rodrigohisashi
