@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -20,10 +21,11 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs-material
 
-      - name: Deploy to GitHub Pages
-        env:
-          GH_TOKEN2: ${{ secrets.GH_TOKEN2 }}
+      - name: Configure Git for GitHub Pages deploy
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages
+          git remote set-url origin https://${{ secrets.GH_TOKEN }}@github.com/rodrigohisashi/studies-wiki.git
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages
