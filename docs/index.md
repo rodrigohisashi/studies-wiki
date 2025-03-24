@@ -1,22 +1,20 @@
-# 📚 My Study Notes
+# 📚 Meus Resumos de Estudo
 
-Welcome to my repository of notes and studies! Here, you'll find materials on various topics, organized for quick reference.  
+Bem-vindo ao meu repositório de anotações e estudos! Aqui você encontrará materiais sobre diversos tópicos, organizados para consulta rápida.  
 
-> "Learning never exhausts the mind." – Leonardo da Vinci  
+> "Aprender nunca cansa a mente." – Leonardo da Vinci  
 
-## 📖 Study Index
+## 📖 Índice de Estudos
 
-### 🔹 **Books (🚧 In Progress)**
-- [The Pragmatic Programmer](pragmatic_programmer.md) - Quick reference on some key topics from the book.
-
----
-
-## 🚀 How to Navigate
-
-- Use the **sidebar** to quickly access content.
-- Utilize the **search bar** (🔍) to find specific topics.
-- Switch to **dark mode** (🌙) using the toggle button at the top.
+### 🔹 **Livros (🚧 Em andamento)**
+- [The Pragmatic Programmer](pragmatic_programmer.md) - Referência rápida sobre alguns tópicos-chave do livro.
 
 ---
 
-This keeps your site clean and easy to browse in English! Let me know if you want more adjustments. 🚀
+## 🚀 Como Navegar
+
+- Use a **barra lateral** para acessar rapidamente o conteúdo.
+- Utilize a **barra de busca** (🔍) para encontrar tópicos específicos.
+- Ative o **modo escuro** (🌙) usando o botão no topo da página.
+
+---
