@@ -3,7 +3,7 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main  # ou a branch que você usa como principal
+      - main
 
 jobs:
   deploy:
@@ -22,13 +22,11 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material
 
-      - name: Set up Git credentials
-        run: git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
+      - name: Build MkDocs site
+        run: mkdocs build --clean
 
       - name: Deploy to GitHub Pages
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages --message "Deploy docs [skip ci]"
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
