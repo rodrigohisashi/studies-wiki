@@ -1,4 +1,4 @@
-# 📚 Meus Resumos de Estudo
+# 📚 Resumos de Estudo
 
 Bem-vindo ao meu repositório de anotações e estudos! Aqui você encontrará materiais sobre diversos tópicos, organizados para consulta rápida.  
 
